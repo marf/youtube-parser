@@ -1,11 +1,11 @@
 # youtube-parser
 A tool to extract URLs and format info from YouTube page.
-This is almost based on the node-ytdl-core by @fent, but I just wanted to learn something from it.
+This is almost based on the node-ytdl-core by @fent and youtube-parser npm package, it just adds the player url and sts to the info returned by the command.
 
 ##Install
 
 ```
-$ npm install -g youtube-parser
+$ npm install -g youtube-parser-enhanced
 ```
 
 ##CLI
@@ -15,8 +15,8 @@ Usage:
   $ youtube-parser url [options]
 
 Examples:
-  $ youtube-parser https://www.youtube.com/watch?v=C_vqnySNhQ0 --container mp4
-  $ youtube-parser https://youtu.be/C_vqnySNhQ0 --quality medium
+  $ youtube-parser-enhanced https://www.youtube.com/watch?v=C_vqnySNhQ0 --container mp4
+  $ youtube-parser-enhanced https://youtu.be/C_vqnySNhQ0 --quality medium
 
 Options:
   -h, --help           Print help
@@ -51,7 +51,7 @@ Promise getURL(string url, object format)
 
 ###Example
 ```js
-var youTubeParser = require('youtube-parser');
+var youTubeParser = require('youtube-parser-enhanced');
 
 youTubeParser.getMetadata('https://www.youtube.com/watch?v=C_vqnySNhQ0')
 .then(

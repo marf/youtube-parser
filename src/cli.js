@@ -7,10 +7,10 @@ var argv = require('yargs').boolean(['dump', 'd', 'videoOnly', 'audioOnly']).arg
 var url, format, quality, container, encoding, audioEncoding,
     printHelp = function () {
       var message = 'Usage:\n';
-      message += '    youtube-parser url [options]\n\n';
+      message += '    youtube-parser-enhanced url [options]\n\n';
       message += 'Examples:\n';
-      message += '    youtube-parser https://www.youtube.com/watch?v=C_vqnySNhQ0 --container mp4\n';
-      message += '    youtube-parser https://youtu.be/C_vqnySNhQ0 --quality medium\n\n';
+      message += '    youtube-parser-enhanced https://www.youtube.com/watch?v=C_vqnySNhQ0 --container mp4\n';
+      message += '    youtube-parser-enhanced https://youtu.be/C_vqnySNhQ0 --quality medium\n\n';
       message += 'Options:\n';
       message += '  -h, --help           Print help\n';
       message += '  -v, --version        Print version\n';
