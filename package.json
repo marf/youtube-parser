@@ -1,0 +1,67 @@
+{
+  "_from": "youtube-parser",
+  "_id": "youtube-parser@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-ZLdYGTUtRd+IEe2UcB7sFdiFBuw=",
+  "_location": "/youtube-parser",
+  "_phantomChildren": {
+    "cliui": "3.2.0",
+    "decamelize": "1.2.0",
+    "os-locale": "1.4.0",
+    "string-width": "1.0.2",
+    "y18n": "3.2.1"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "youtube-parser",
+    "name": "youtube-parser",
+    "escapedName": "youtube-parser",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/youtube-parser/-/youtube-parser-1.1.0.tgz",
+  "_shasum": "64b75819352d45df8811ed94701eec15d88506ec",
+  "_spec": "youtube-parser",
+  "_where": "C:\\Users\\fonta\\Desktop\\eSound",
+  "author": {
+    "name": "Kuu Miyazaki"
+  },
+  "bin": {
+    "youtube-parser": "bin/youtube-parser.js"
+  },
+  "bugs": {
+    "url": "https://github.com/kuu/youtube-parser/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bluebird": "^2.9.14",
+    "xhr2": "^0.1.2",
+    "yargs": "^3.5.4"
+  },
+  "deprecated": false,
+  "description": "A tool to extract URLs and format info from YouTube page.",
+  "devDependencies": {
+    "eslint": "^0.17.0",
+    "jasmine": "^2.2.1",
+    "jasmine-core": "^2.2.0"
+  },
+  "homepage": "https://github.com/kuu/youtube-parser",
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "youtube-parser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuu/youtube-parser.git"
+  },
+  "scripts": {
+    "lint": "eslint src/*.js",
+    "test": "jasmine"
+  },
+  "version": "1.1.0"
+}
