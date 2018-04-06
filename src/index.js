@@ -46,12 +46,12 @@ function fetchMetadata(url) {
         var playerUrl = xhr.response.match(regex);
         if(playerUrl.length != 2)
           reject(new Error('Player url regex invalid!'));
-        
+
         var _playerUrl = playerUrl[1];
         jsonStr = extractConfigData(xhr.response);
         var reply = JSON.parse(jsonStr);
         reply.args.playerUrl = _playerUrl;
-        reply.args.sts = reply.sts; 
+        reply.args.sts = reply.sts;
 
         fulfill(reply);
       } catch (e) {
@@ -187,7 +187,25 @@ function isHigherQuality(quality, required) {
 }
 
 function findBestFormats(availableFormats, requestedFormat) {
-  var formats = availableFormats.filter(function (format) {
+
+  let formats = [];
+  let foundAudio = false;
+  let foundVideo = false;
+
+  for(let i = 0; i < availableFormats.length; i++)
+  {
+      if(availableFormats[i].itag == 18)
+      {
+            formats.push(availableFormats[i]);
+            foundVideo = true;
+      }
+      else if(availableFormats[i].itag == 140)
+      {
+            formats.push(availableFormats[i]);
+            foundAudio = true;
+      }
+  }
+  /*var formats = availableFormats.filter(function (format) {
 
     if (requestedFormat.quality !== void 0 &&
         isHigherQuality(format.quality, requestedFormat.quality) === false) {
@@ -217,8 +235,11 @@ function findBestFormats(availableFormats, requestedFormat) {
       return false;
     }
 
+    if(format.itag != 18 || format.itag != 140)
+      return false;
+
     return true;
-  });
+  });*/
   return formats;
 }
 
