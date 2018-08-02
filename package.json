@@ -1,33 +1,62 @@
 {
-  "name": "youtube-parser-enhanced",
-  "version": "1.0.6",
-  "description": "A tool to extract URLs and format info from YouTube page.",
-  "main": "src/index.js",
+  "_args": [
+    [
+      "youtube-parser-enhanced@1.0.17",
+      "D:\\Projects\\eSoundNative"
+    ]
+  ],
+  "_from": "youtube-parser-enhanced@1.0.17",
+  "_id": "youtube-parser-enhanced@1.0.17",
+  "_inBundle": false,
+  "_integrity": "sha512-2v44mAHXfoVXxSSS61+Y7YBVLFu4l1egBWukyBx/qeM5iilMNOIDQ/ySiZV47+yliIF+o8L+715U9VbxX2MWKw==",
+  "_location": "/youtube-parser-enhanced",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "youtube-parser-enhanced@1.0.14",
+    "name": "youtube-parser-enhanced",
+    "escapedName": "youtube-parser-enhanced",
+    "rawSpec": "1.0.17",
+    "saveSpec": null,
+    "fetchSpec": "1.0.17"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/youtube-parser-enhanced/-/youtube-parser-enhanced-1.0.17.tgz",
+  "_shasum": "ea36e226d3418ca8cb880556a67ed8b9a387dfe3",
+  "_spec": "youtube-parser-enhanced@1.0.17",
+  "_where": "D:\\Projects\\eSoundNative",
+  "author": {
+    "name": "Marco Fontana"
+  },
   "bin": {
     "youtube-parser": "bin/youtube-parser-enhanced.js"
+  },
+  "bugs": {
+    "url": "https://github.com/marf/youtube-parser/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A tool to extract URLs and format info from YouTube page.",
+  "devDependencies": {
+    "eslint": "^0.17.0",
+    "jasmine": "^2.2.1",
+    "jasmine-core": "^2.2.0"
+  },
+  "homepage": "https://github.com/marf/youtube-parser",
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "youtube-parser-enhanced",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marf/youtube-parser.git"
   },
   "scripts": {
     "lint": "eslint src/*.js",
     "test": "jasmine"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/marf/youtube-parser"
-  },
-  "author": "Marco Fontana",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/marf/youtube-parser/issues"
-  },
-  "homepage": "https://github.com/marf/youtube-parser",
-  "dependencies": {
-    "bluebird": "^2.9.14",
-    "xhr2": "^0.1.2",
-    "yargs": "^3.5.4"
-  },
-  "devDependencies": {
-    "eslint": "^0.17.0",
-    "jasmine": "^2.2.1",
-    "jasmine-core": "^2.2.0"
-  }
+  "version": "1.0.17"
 }
